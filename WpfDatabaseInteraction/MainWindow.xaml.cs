@@ -24,7 +24,7 @@ public static class dataops {
             string sql = "SELECT * FROM users";
             SqlCommand com = new SqlCommand(sql, sc);
 
-               
+                 
             using (SqlDataAdapter adapter = new SqlDataAdapter(com))
             {
                 DataTable dt = new DataTable();
