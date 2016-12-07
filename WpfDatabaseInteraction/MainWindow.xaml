@@ -8,7 +8,7 @@
         Title="MainWindow" Height="584.878" Width="625"
         Loaded="Window_Loaded">
     <Grid Margin="0,0,0.4,0.2">
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,290,0,0" Width="618" Height="255"/>
+        <DataGrid x:Name="dataGrid" Margin="0,295,0,5"/>
         <TextBox x:Name="textBoxAddid" HorizontalAlignment="Left" Height="23" Margin="26,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBoxAddName" HorizontalAlignment="Left" Height="23" Margin="151,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Name"/>
         <TextBox x:Name="textBoxAddPass" HorizontalAlignment="Left" Height="23" Margin="276,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
