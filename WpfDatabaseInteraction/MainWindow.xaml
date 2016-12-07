@@ -5,10 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfDatabaseInteraction"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="625"
+        Title="MainWindow" Height="584.878" Width="625"
         Loaded="Window_Loaded">
-    <Grid>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,81,0,-0.2" VerticalAlignment="Top" Height="440" Width="618"/>
+    <Grid Margin="0,0,0.4,0.2">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,290,0,0" Width="618" Height="255"/>
+        <TextBox x:Name="textBoxAddid" HorizontalAlignment="Left" Height="23" Margin="26,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxAddName" HorizontalAlignment="Left" Height="23" Margin="151,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Name"/>
+        <TextBox x:Name="textBoxAddPass" HorizontalAlignment="Left" Height="23" Margin="276,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxAddEmail" HorizontalAlignment="Left" Height="23" Margin="401,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="New" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="132" Margin="10,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="525" Panel.ZIndex="-1"/>
+        <Button x:Name="buttonAdd" Content="Add" HorizontalAlignment="Left" Margin="240,94,0,0" VerticalAlignment="Top" Width="75" Click="buttonAdd_Click"/>
+        <Label x:Name="label1" Content="ID" HorizontalAlignment="Left" Margin="62,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" Content="Name" HorizontalAlignment="Left" Margin="189,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy1" Content="Pass" HorizontalAlignment="Left" Margin="314,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy2" Content="Email" HorizontalAlignment="Left" Margin="444,41,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
