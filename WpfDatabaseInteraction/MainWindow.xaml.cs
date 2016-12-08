@@ -90,5 +90,18 @@ namespace WpfDatabaseInteraction
             textBoxAddPass.Clear();
             textBoxAddEmail.Clear();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            //Console.WriteLine(dataGrid.SelectedIndex);
+            //Console.WriteLine(dataGrid.);
+            DataRowView dataRow = (DataRowView)dataGrid.SelectedItem;
+            string userID = dataRow.Row.ItemArray[0].ToString();
+            Console.WriteLine(userID);
+
+            string deleteUserString = String.Format("DELETE FROM Users WHERE id = {0}", dataops.convertint(userID));
+            dataops.rundbstring(deleteUserString);
+            dataops.loadDataTable(dataGrid);
+        }
     }
 }
